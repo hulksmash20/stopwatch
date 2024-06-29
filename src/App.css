@@ -1,5 +1,74 @@
 .App {
   text-align: center;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.clockArea {
+  background-color: #202020;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.outerClock {
+  border-radius: 50%;
+  padding: 7px;
+  background-color: #272727;
+}
+
+.clock {
+  background-color: #202020;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+
+.displayTime {
+  color: #fb770d;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fb770d;
+}
+
+.list {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.buttonArea {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.buttonArea button {
+  background-color: #272727;
+  padding: 25px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
 .App-logo {
